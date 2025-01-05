@@ -1,46 +1,122 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background: #333;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 main {
-    padding: 1rem;
+    padding: 2rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section {
-    margin: 1.5rem 0;
+    margin: 2rem 0;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #6a11cb;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 0.5rem 0;
+    line-height: 1.5;
 }
 
 footer {
-    background: #333;
+    background: #6a11cb;
     color: #fff;
     text-align: center;
-    padding: 0.5rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 0.8rem 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    color: #6a11cb;
+}
+
+form input, button {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+button {
+    background: #6a11cb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2575fc;
 }
