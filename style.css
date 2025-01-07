@@ -1,20 +1,20 @@
-/* Import the 'Roboto' font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Import the 'Poppins' font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     background-color: #121212;
     color: #e0e0e0;
+    text-align: center; /* Center alignment for all text */
 }
 
 header {
     background: linear-gradient(45deg, #1f1f1f, #333333);
     color: #ffffff;
     padding: 2rem 0;
-    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -98,7 +98,6 @@ section ul li {
 footer {
     background: #1f1f1f;
     color: #e0e0e0;
-    text-align: center;
     padding: 0.8rem 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 }
