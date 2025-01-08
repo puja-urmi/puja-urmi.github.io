@@ -1,11 +1,11 @@
 /* Import the 'Poppins' font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.5; /* Slightly tighter line-height for better readability */
     background-color: #121212;
     color: #e0e0e0;
 }
@@ -13,34 +13,33 @@ body {
 header {
     background: linear-gradient(135deg, #1f1f1f, #444851, #1f1f1f);
     color: #ffffff;
-    padding: 3rem 1.5rem;
+    padding: 2rem 1rem; /* Reduced padding */
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Slightly reduced shadow */
 }
 
 .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem; /* Reduced margin */
 }
 
 .profile-photo {
-    width: 140px;
-    height: 140px;
+    width: 120px; /* Slightly smaller */
+    height: 120px;
     border-radius: 50%;
     margin-bottom: 1rem;
     object-fit: cover;
-    border: 4px solid #444;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    border: 3px solid #444; /* Reduced border size */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Slightly reduced shadow */
 }
 
-
 .name {
-    font-size: 2.8rem;
+    font-size: 2.4rem; /* Slightly smaller */
     margin: 0;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 400; /* Lighter font weight */
 }
 
 nav ul {
@@ -50,15 +49,15 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 1.5rem;
+    gap: 20px; /* Reduced gap */
+    margin-top: 1rem; /* Reduced margin */
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
-    padding: 0.8rem 1.4rem;
+    font-weight: 500; /* Lighter weight */
+    padding: 0.7rem 1.2rem; /* Reduced padding */
     border-radius: 30px;
     transition: background 0.3s ease, color 0.3s ease;
 }
@@ -69,25 +68,25 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 3rem 2rem;
-    max-width: 1200px;
+    padding: 2.5rem 1.5rem; /* Reduced padding */
+    max-width: 1100px; /* Reduced max-width */
     margin: 0 auto;
 }
 
 section {
-    margin: 2.5rem 0;
+    margin: 2rem 0;
     background: #1e1e1e;
-    padding: 1.5rem; /* Reduced padding */
+    padding: 1.2rem; /* Reduced padding */
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); /* Reduced shadow */
 }
 
 section h2 {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Smaller font size */
     margin-bottom: 1rem;
     color: #76c7c0;
-    font-weight: 700;
-    text-align: center; /* Center headers */
+    font-weight: 500; /* Lighter weight */
+    text-align: center;
 }
 
 section ul {
@@ -96,15 +95,15 @@ section ul {
 }
 
 section ul li {
-    margin: 1rem 0;
-    line-height: 1.7;
+    margin: 0.8rem 0; /* Reduced margin */
+    line-height: 1.5;
     color: #bdbdbd;
 }
 
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1.5rem; /* Reduced gap */
     justify-content: space-between;
 }
 
@@ -114,7 +113,7 @@ section ul li {
     border-radius: 10px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3); /* Reduced shadow */
 }
 
 .project img {
@@ -125,16 +124,16 @@ section ul li {
 
 .project p {
     color: #bdbdbd;
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.85rem; /* Smaller font size */
+    line-height: 1.4;
 }
 
 footer {
     background: #1f1f1f;
     color: #e0e0e0;
     text-align: center;
-    padding: 1.5rem;
-    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5);
+    padding: 1.2rem; /* Reduced padding */
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.4); /* Reduced shadow */
 }
 
 footer p {
@@ -144,26 +143,26 @@ footer p {
 
 form {
     display: grid;
-    gap: 1rem; /* Reduced gap */
-    max-width: 500px; /* Reduced width */
+    gap: 0.8rem; /* Reduced gap */
+    max-width: 450px; /* Reduced width */
     margin: 2rem auto;
     background: #1e1e1e;
-    padding: 1.5rem; /* Reduced padding */
+    padding: 1.5rem;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); /* Reduced shadow */
 }
 
 form label {
-    font-weight: bold;
+    font-weight: 500; /* Lighter weight */
     color: #76c7c0;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Slightly smaller */
 }
 
 form input, textarea, button {
-    padding: 1rem;
+    padding: 0.8rem;
     border: 1px solid #444;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 0.95rem; /* Slightly smaller font size */
     background: #333;
     color: #e0e0e0;
 }
@@ -178,7 +177,7 @@ button {
     color: #121212;
     border: none;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 500; /* Lighter weight */
     transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -207,7 +206,7 @@ div:hover .hover-image {
     }
 
     section {
-        padding: 1.5rem;
+        padding: 1.2rem;
     }
 
     .project {
