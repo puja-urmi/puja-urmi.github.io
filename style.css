@@ -48,7 +48,6 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 25px;
     margin-top: 1.5rem;
 }
@@ -168,6 +167,10 @@ button:hover {
         gap: 10px;
     }
 
+    nav ul li a {
+        padding: 0.6rem 1rem;
+    }
+
     section {
         padding: 1.5rem;
     }
@@ -198,6 +201,7 @@ button:hover {
     }
 
     nav ul li a {
+        display: inline-block;
         text-align: center;
         width: 100%;
         padding: 0.8rem 0;
@@ -225,6 +229,7 @@ button:hover {
 
     form {
         padding: 1rem;
+        gap: 1rem;
     }
 
     button {
@@ -235,9 +240,6 @@ button:hover {
     .gallery-item {
         max-width: 150px;
     }
-
-    .profile-photo {
-        width: 100px;
-        height: 100px;
-    }
 }
+
+/* Add other sections like about, projects etc. based on your current needs */
