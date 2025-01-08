@@ -1,8 +1,8 @@
-/* Import the 'Poppins' font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+/* Import the 'Roboto' font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 body {
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.5; /* Slightly tighter line-height for better readability */
