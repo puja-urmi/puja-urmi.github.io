@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #1f1f1f, #333333);
+    background: linear-gradient(135deg, #1f1f1f, #444851, #1f1f1f);
     color: #ffffff;
     padding: 3rem 1.5rem;
     text-align: center;
@@ -48,6 +48,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 25px;
     margin-top: 1.5rem;
 }
@@ -75,7 +76,7 @@ main {
 section {
     margin: 2.5rem 0;
     background: #1e1e1e;
-    padding: 2rem;
+    padding: 1.5rem; /* Reduced padding */
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
@@ -85,6 +86,7 @@ section h2 {
     margin-bottom: 1rem;
     color: #76c7c0;
     font-weight: 700;
+    text-align: center; /* Center headers */
 }
 
 section ul {
@@ -96,6 +98,34 @@ section ul li {
     margin: 1rem 0;
     line-height: 1.7;
     color: #bdbdbd;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1 1 calc(50% - 1rem);
+    background: #252525;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project p {
+    color: #bdbdbd;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 footer {
@@ -113,11 +143,11 @@ footer p {
 
 form {
     display: grid;
-    gap: 1.5rem;
-    max-width: 700px;
+    gap: 1rem; /* Reduced gap */
+    max-width: 500px; /* Reduced width */
     margin: 2rem auto;
     background: #1e1e1e;
-    padding: 2rem;
+    padding: 1.5rem; /* Reduced padding */
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
@@ -167,12 +197,12 @@ button:hover {
         gap: 10px;
     }
 
-    nav ul li a {
-        padding: 0.6rem 1rem;
-    }
-
     section {
         padding: 1.5rem;
+    }
+
+    .project {
+        flex: 1 1 calc(100% - 1rem);
     }
 }
 
@@ -187,7 +217,6 @@ button:hover {
     }
 
     .profile-photo {
-        margin-right: 0;
         margin-bottom: 1rem;
     }
 
@@ -201,15 +230,9 @@ button:hover {
     }
 
     nav ul li a {
-        display: inline-block;
         text-align: center;
         width: 100%;
         padding: 0.8rem 0;
-    }
-
-    section {
-        margin: 1.5rem 0;
-        padding: 1.5rem;
     }
 
     form {
@@ -229,7 +252,6 @@ button:hover {
 
     form {
         padding: 1rem;
-        gap: 1rem;
     }
 
     button {
@@ -237,9 +259,7 @@ button:hover {
         font-size: 0.9rem;
     }
 
-    .gallery-item {
-        max-width: 150px;
+    .project img {
+        max-width: 100%;
     }
 }
-
-/* Add other sections like about, projects etc. based on your current needs */
