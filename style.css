@@ -1,8 +1,8 @@
-/* Import the 'Roboto' font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Import the 'Poppins' font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -184,6 +184,14 @@ button {
 button:hover {
     background: #56a69f;
     color: #ffffff;
+}
+
+.hover-image {
+    opacity: 0;
+}
+
+div:hover .hover-image {
+    opacity: 1;
 }
 
 /* Responsive Adjustments */
