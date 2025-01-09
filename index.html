@@ -31,54 +31,33 @@
         <section id="gallery">
             <h2>GALLERY</h2>
             <div class="gallery-container">
-                <div class="gallery-wrapper">
-                    <div class="gallery-item">
-                        <img src="best_paper_award.jpeg" alt="5th Best Paper Award">
-                        <div class="overlay">
-                            <p><strong>5th Best Paper Award</strong></p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="hult_prize.jpeg" alt="Hult Prize">
-                        <div class="overlay">
-                            <p><strong>Hult Prize</strong></p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="top_project_award.jpeg" alt="Top Project Award">
-                        <div class="overlay">
-                            <p><strong>Top Project Award</strong></p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="best_informative_poster_award.jpeg" alt="Best Informative Poster Award">
-                        <div class="overlay">
-                            <p><strong>Best Informative Poster Award</strong></p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="icete.jpg" alt="Presented at ICETE-2019">
-                        <div class="overlay">
-                            <p><strong>Presented at ICETE-2019</strong></p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="dean's_list_2017.jpg" alt="Placed in MIST Dean's List-2017">
-                        <div class="overlay">
-                            <p><strong>Placed in MIST Dean's List-2017</strong></p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="dean's_list_2018.jpg" alt="Placed in MIST Dean's List-2018">
-                        <div class="overlay">
-                            <p><strong>Placed in MIST Dean's List-2018</strong></p>
-                        </div>
-                    </div>
+                <div class="image-card">
+                    <img src="best_paper_award.jpeg" alt="Best Paper Award">
+                    <div class="hover-text"><strong>5th Best Paper Award</strong></div>
                 </div>
-                <button class="arrow left-arrow">&#8249;</button>
-                <button class="arrow right-arrow">&#8250;</button>
+                <div class="image-card">
+                    <img src="hult_prize.jpeg" alt="Hult Prize">
+                    <div class="hover-text"><strong>Hult Prize</strong></div>
+                </div>
+                <div class="image-card">
+                    <img src="top_project_award.jpeg" alt="Top Project Award">
+                    <div class="hover-text"><strong>Top Project Award</strong></div>
+                </div>
+                <!-- Add more image cards as needed -->
+            </div>
+            <div class="nav-arrows">
+                <button class="prev" onclick="scrollGallery(-1)">&#10094;</button>
+                <button class="next" onclick="scrollGallery(1)">&#10095;</button>
             </div>
         </section>
+        
+        <script>
+            function scrollGallery(direction) {
+                const container = document.querySelector('.gallery-container');
+                const scrollAmount = direction * 200; // Adjust scroll amount
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        </script>
 
         <section id="projects">
             <h2>PROJECTS</h2>
