@@ -18,7 +18,7 @@ body {
 header {
     background: #f8f9fa;
     border-bottom: 1px solid #e9ecef;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     text-align: center;
 }
 
@@ -29,27 +29,27 @@ header {
 }
 
 .profile-photo {
-    width: 140px;
-    height: 140px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     object-fit: cover;
-    border: 4px solid #e9ecef;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e9ecef;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 .name {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 
 .title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #6c757d;
     font-weight: 400;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Navigation */
@@ -58,7 +58,7 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 0;
     margin: 0;
 }
@@ -67,8 +67,9 @@ nav a {
     text-decoration: none;
     color: #495057;
     font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.95rem;
     transition: all 0.2s ease;
 }
 
@@ -81,24 +82,24 @@ nav a:hover {
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
 }
 
 /* Sections */
 section {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
     border: 1px solid #f1f3f4;
 }
 
 section h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
     position: relative;
 }
@@ -106,32 +107,33 @@ section h2 {
 section h2::after {
     content: '';
     display: block;
-    width: 60px;
-    height: 3px;
+    width: 50px;
+    height: 2px;
     background: #2c3e50;
-    margin: 0.5rem auto 0;
+    margin: 0.4rem auto 0;
     border-radius: 2px;
 }
 
 section p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
     color: #555;
-    line-height: 1.7;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 /* Research Interests */
 .research-interests {
     background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-top: 2rem;
-    border-left: 4px solid #2c3e50;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1.2rem;
+    border-left: 3px solid #2c3e50;
 }
 
 .research-interests h3 {
     color: #2c3e50;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
 }
 
 .research-interests p {
@@ -142,47 +144,47 @@ section p {
 /* Gallery Grid */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
 .gallery-item {
     text-align: center;
     background: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
+    padding: 1rem;
+    border-radius: 6px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-item img {
     width: 100%;
-    height: 200px;
+    height: 160px;
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.6rem;
 }
 
 .gallery-item h4 {
     color: #2c3e50;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
 }
 
 .gallery-item p {
     color: #6c757d;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 /* Projects */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
 }
 
 .project-item {
@@ -246,25 +248,25 @@ section p {
 
 #publications li {
     background: #f8f9fa;
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #2c3e50;
+    margin-bottom: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 6px;
+    border-left: 3px solid #2c3e50;
 }
 
 #publications li strong {
     color: #2c3e50;
     font-weight: 600;
     display: block;
-    margin-bottom: 0.5rem;
-    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
 }
 
 #publications li em {
     color: #6c757d;
     font-style: italic;
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 #publications li p {
@@ -315,23 +317,24 @@ section p {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     color: #2c3e50;
     font-weight: 500;
+    font-size: 0.95rem;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.7rem;
     border: 1px solid #dee2e6;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-family: inherit;
 }
 
@@ -381,37 +384,58 @@ footer p {
 /* Project Cards (alternate style) */
 .project-card {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
 }
 
 .project-image {
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
 }
 
 .project-content {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .project-content h3 {
     color: #2c3e50;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.15rem;
 }
 
 .project-content p {
     color: #555;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 1.2rem;
+}
+
+.tech-tag {
+    padding: 0.3rem 0.6rem;
+    background-color: #ecf0f1;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    color: #34495e;
+    transition: background-color 0.3s;
+}
+
+.tech-tag:hover {
+    background-color: #e2e8f0;
 }
 
 .project-link {
@@ -419,10 +443,11 @@ footer p {
     color: #2c3e50;
     text-decoration: none;
     font-weight: 500;
-    padding: 0.6rem 1.2rem;
-    border: 2px solid #2c3e50;
+    padding: 0.5rem 1rem;
+    border: 1px solid #2c3e50;
     border-radius: 4px;
     transition: all 0.2s ease;
+    font-size: 0.85rem;
 }
 
 .project-link:hover {
@@ -441,38 +466,40 @@ footer p {
 
 .download-card {
     background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 1.5rem;
+    border-radius: 6px;
     text-align: center;
-    border-top: 4px solid #2c3e50;
+    border-top: 3px solid #2c3e50;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .download-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .download-card h3 {
     color: #2c3e50;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.15rem;
 }
 
 .download-card p {
     color: #555;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
 }
 
 .download-btn {
     display: inline-block;
-    padding: 0.8rem 2rem;
+    padding: 0.6rem 1.5rem;
     background: #2c3e50;
     color: #fff;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 4px;
     font-weight: 500;
+    font-size: 0.9rem;
     transition: all 0.2s ease;
 }
 
