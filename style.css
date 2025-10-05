@@ -240,9 +240,29 @@ section p {
 
 /* Gallery Grid */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    display: flex;
+    overflow-x: auto;
     gap: 0.6rem;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    position: relative;
+}
+
+/* Add subtle indicators for scrolling */
+.gallery-grid::-webkit-scrollbar {
+    height: 4px;
+}
+
+.gallery-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.gallery-grid::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
 }
 
 .gallery-item {
@@ -251,6 +271,8 @@ section p {
     padding: 0.6rem;
     border-radius: 5px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex: 0 0 180px;
+    width: 180px;
 }
 
 .gallery-item:hover {
