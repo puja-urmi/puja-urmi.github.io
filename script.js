@@ -5,17 +5,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalImage = document.getElementById('image-modal-content');
     const modalCaption = document.getElementById('image-modal-caption');
     const closeButton = document.querySelector('.image-modal-close');
-    const galleryImages = document.querySelectorAll('.gallery-item img');
+    const galleryGrid = document.querySelector('.gallery-grid');
 
-    if (!modal || !modalImage || !modalCaption || !closeButton || galleryImages.length === 0) {
+    if (!modal || !modalImage || !modalCaption || !closeButton || !galleryGrid) {
         return;
     }
 
     const openModal = (imageElement) => {
-        const captionElement = imageElement.closest('.gallery-item')?.querySelector('h4');
+        const galleryItem = imageElement.closest('.gallery-item');
+        const titleElement = galleryItem?.querySelector('h4');
+        const descriptionElement = galleryItem?.querySelector('p');
         modalImage.src = imageElement.src;
         modalImage.alt = imageElement.alt || 'Expanded gallery image';
-        modalCaption.textContent = captionElement ? captionElement.textContent : '';
+        modalCaption.textContent = [
+            titleElement?.textContent?.trim(),
+            descriptionElement?.textContent?.trim(),
+        ].filter(Boolean).join(' - ');
         modal.classList.add('open');
         modal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
@@ -29,8 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
     };
 
-    galleryImages.forEach((imageElement) => {
-        imageElement.addEventListener('click', () => openModal(imageElement));
+    galleryGrid.addEventListener('click', (event) => {
+        const imageElement = event.target.closest('.gallery-item img');
+
+        if (!imageElement) {
+            return;
+        }
+
+        openModal(imageElement);
     });
 
     closeButton.addEventListener('click', closeModal);
