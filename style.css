@@ -286,6 +286,7 @@ section p {
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 0.4rem;
+    cursor: zoom-in;
 }
 
 .gallery-item h4 {
@@ -460,6 +461,52 @@ section p {
     font-weight: 500;
     border: 1px solid rgba(52, 152, 219, 0.15);
     margin-left: 0.5rem;
+}
+
+/* Gallery image modal */
+.image-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(16, 22, 31, 0.88);
+    z-index: 2000;
+    padding: 1rem;
+}
+
+.image-modal.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-modal-content {
+    max-width: min(95vw, 1200px);
+    max-height: 82vh;
+    width: auto;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+}
+
+.image-modal-caption {
+    margin-top: 0.7rem;
+    color: #f2f6fb;
+    text-align: center;
+    max-width: min(92vw, 1000px);
+    font-size: 0.95rem;
+}
+
+.image-modal-close {
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
 }
 
 /* Simplified publications now use .simple-list */
